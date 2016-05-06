@@ -1,0 +1,12 @@
+rest_departments:
+    type:     rest
+    resource: AppBundle\Controller\DepartmentController
+
+rest_depts:
+    type:     rest
+    resource: AppBundle\Controller\FooBarController
+
+rest_employees:
+    type:     rest
+    resource: AppBundle\Controller\EmployeeController
+    parent:   rest_departments

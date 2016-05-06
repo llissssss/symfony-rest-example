@@ -1,4 +1,18 @@
-rest_serializer
-===============
+FOS Rest + Serializer example
+=============================
 
-A Symfony project created on May 6, 2016, 12:30 pm.
+Rest intro
+
+# REST
+- Resources (auto generation) => Department
+- Resources (manual definition) => FooBarController
+- Sub resources
+php bin/console debug:router
+
+
+# SERIALIZATION
+- Serialize entities (no type definition required)
+- Serialize models (type definition required)
+- Exclusion strategies
+- Virtual properties
+- Circular references
