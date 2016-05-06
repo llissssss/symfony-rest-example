@@ -1,6 +1,4 @@
-# PHPStorm
-.idea/vcs.xml
-.idea/workspace.xml
+.idea
 
 # Cache and logs (Symfony2)
 /app/cache/*
