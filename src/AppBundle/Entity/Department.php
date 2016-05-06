@@ -3,12 +3,13 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * Department
  *
  * @ORM\Table(name="department")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\DepartmentRepository")
+ * @ORM\Entity
  */
 class Department
 {
@@ -25,6 +26,7 @@ class Department
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
+     * @Groups({"group1", "group2"})
      */
     private $name;
 
@@ -61,6 +63,16 @@ class Department
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string
+     */
+    public function getTestBig()
+    {
+        return 'this';
     }
 }
 
